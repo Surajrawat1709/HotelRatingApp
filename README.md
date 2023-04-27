@@ -14,7 +14,7 @@ This app mainly contains 3 microservices-
 Apart from these services, Okta has been used to provide security to microservices.
 
 ## Architecture
-
+![Architecture](https://user-images.githubusercontent.com/60563826/234794845-a0052e04-3537-41dd-989d-c3180b9cb2f8.jpg)
 
 ## System Spec
 
