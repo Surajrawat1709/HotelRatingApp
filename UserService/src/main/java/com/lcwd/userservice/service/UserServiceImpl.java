@@ -52,7 +52,7 @@ public class UserServiceImpl implements UserServices {
         Rating[] ratingsOfUser= template.getForObject("http://RATING-SERVICE/rating/user/" + user.getUserId(), Rating[].class);
    logger.info("{}", ratingsOfUser);
 List<Rating> ratings=Arrays.stream(ratingsOfUser).collect(Collectors.toList());
-        
+
    List<Rating> ratingList=ratings.stream().map(rating-> {
 
 //       ResponseEntity<Hotel> forEntity = template.getForEntity("http://HOTEL-SERVICE/hotel/"+rating.getHotelId(), Hotel.class);
@@ -69,7 +69,4 @@ return rating;
    user.setRatings(ratingList);
    return user;
     }
-
-
-
 }

@@ -36,9 +36,9 @@ public class UserController {
 
    // @CircuitBreaker(name="ratingHotelBreaker",fallbackMethod = "ratingHotelFallback")
    @GetMapping("/{userId}")
-    public ResponseEntity<User> getSingleUser(@PathVariable String userid){
+    public ResponseEntity<User> getSingleUser(@PathVariable String userId){
 //logger.info("Get single User Handler: UserController");
-        return ResponseEntity.ok(service.getUser(userid));
+        return ResponseEntity.ok(service.getUser(userId));
     }
 
     //creating fallback method for circuitbreaker
