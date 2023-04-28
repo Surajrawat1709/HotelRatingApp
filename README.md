@@ -16,15 +16,23 @@ Apart from these services, Okta has been used to provide security to microservic
 ## Architecture
 ![Architecture](https://user-images.githubusercontent.com/60563826/234794845-a0052e04-3537-41dd-989d-c3180b9cb2f8.jpg)
 
-## System Spec
+## Technologies
 
-### Tech Spec
-| Name  |
-|----|
-| Springboot 2.7.8  |
-| Java 11 |
-| Spring Cloud Gateway |
-|  |
+**Spring Boot:** Server side framework
+
+**JPA:** Entity framework
+
+**Lombok:** Provides automated getter/setters
+
+**Actuator:** Application insights on the fly
+
+**Spring Security:** Spring's security 
+
+**Devtools:** Support Hot-Code Swapping with live browser reload
+
+**Okta:** API authentication
+
+**H2:** H2 database embedded version
 
 
 ### Libraries
