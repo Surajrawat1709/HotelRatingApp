@@ -1,5 +1,6 @@
 
 # Hotel Rating App
+This codebase was created to demonstrate a backend application built with Java 11 + Spring Boot 3 including CRUD operations, authentication, routing and more.
 
 This app helps users to rate a hotel services based on their experience. Once user is logged with correct email and password, he can post and see the reviews given by other users.
 
