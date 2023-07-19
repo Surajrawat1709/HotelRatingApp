@@ -13,6 +13,18 @@ This app mainly contains 3 microservices-
 
 Apart from these services, Okta has been used to provide security to microservices.
 
+Taking a closer look at the project structure, the main code of the application is located in the src/main/java directory. Additionally, configuration files and such can be found in the src/main/resources directory.
+
+The core logic of the application is organized as follows:
+
+~Controller: Processes HTTP requests, calls business logic, and generates responses.
+~Service: Implements business logic and interacts with the database through Repositories.
+~Repository: An interface for interacting with the database, implemented using Spring Data JPA.
+
+Authentication and authorization management are implemented using Spring Security, with token-based authentication using Okta. Moreover, various features of Spring Boot are utilized to implement exception handling, logging, testing, and more.
+
+Through this project, you can learn how to implement backend applications based on Spring and how to utilize various Spring technologies. Additionally, by implementing an application following the RealWorld specifications, it provides a basis for deciding which technology stack to choose through comparisons with various other technology stacks.
+
 ## Architecture
 ![Architecture](https://user-images.githubusercontent.com/60563826/234794845-a0052e04-3537-41dd-989d-c3180b9cb2f8.jpg)
 
