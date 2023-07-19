@@ -19,7 +19,9 @@ Taking a closer look at the project structure, the main code of the application 
 The core logic of the application is organized as follows:
 
 ~Controller: Processes HTTP requests, calls business logic, and generates responses.
+
 ~Service: Implements business logic and interacts with the database through Repositories.
+
 ~Repository: An interface for interacting with the database, implemented using Spring Data JPA.
 
 Authentication and authorization management are implemented using Spring Security, with token-based authentication using Okta. Moreover, various features of Spring Boot are utilized to implement exception handling, logging, testing, and more.
